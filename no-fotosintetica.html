@@ -78,38 +78,14 @@
     <main class="m-auto">
         <img class="mb-4" src="./assets/brand/sun-plant-wilt-solid.svg" width="72" height="57">
 
-        <h1 class="h3 mb-3 fw-normal">Camino evolutivo de las plantas</h1>
+        <h1 class="h3 mb-3 fw-normal">Origen de la primera célula eucariota no fotosintética</h1>
 
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h2><i class="material-icons ">adb</i></h2>
-                        <h5 class="card-title">Origen de la primera célula eucariota no fotoseintética</h5>
-                        <!-- Button trigger modal -->
-                        <a href="fotosintetica.html">
-                            <button type="button" class="btn btn-primary">
-                            Ver
-                        </button>
-                        </a>
-                    </div>
-                </div>
+        <div class="card text-bg-dark">
+            <img src="./assets/img/fotosintetica.png" class="card-img">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Fotosintetica</h5>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h2><i class="material-icons ">spa</i></h2>
-                        <h5 class="card-title">Origen de la primera célula eucariota fotoseintética</h5>
-                        <a href="no-fotosintetica.html">
-                            <button type="button" class="btn btn-primary">
-                            Ver
-                        </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
 
 
@@ -117,6 +93,39 @@
     </main>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
+
+<script type="text/javascript">
+    const myModal = document.getElementById('myModal')
+    console.log("pasa")
+
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        console.log("pasa")
+        myInput.focus()
+    })
+</script>
 
 </html>
