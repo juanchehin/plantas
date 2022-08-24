@@ -5,15 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Angiospermas</title>
+    <title>Dicotiledóneas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            font-size: 18px;
+            background-color: #CCC;
+        }
+        
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #0C9;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+        }
+        
+        .my-float {
+            margin-top: 22px;
+        }
+        
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -71,46 +101,32 @@
 
 <body class="text-center">
 
+
     <main class="m-auto">
+        <a href="index.html">
+            <button type="button" class="btn btn-secondary btn-lg" style="float: right;"><i class="material-icons ">home</i></button>
+        </a>
+
         <img class="mb-4" src="./assets/brand/sun-plant-wilt-solid.svg" width="72" height="57">
 
-        <h1 class="h3 mb-3 fw-normal">Angiospermas</h1>
+        <h1 class="h3 mb-3 fw-normal">Dicotiledóneas</h1>
 
 
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h2><i class="material-icons ">spa</i></h2>
-                        <h5 class="card-title">Monocotiledóneas</h5>
-                        <a href="monocotiledoneas.html">
-                            <button type="button" class="btn btn-primary">
-                            Ver
-                        </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h2><i class="material-icons ">spa</i></h2>
-                        <h5 class="card-title">Dicotiledóneas</h5>
-                        <a href="dicotiledoneas.html">
-                            <button type="button" class="btn btn-primary">
-                            Ver
-                        </button>
-                        </a>
-                    </div>
-                </div>
+        <div class="card text-bg-dark">
+            <img src="./assets/img/dicotiledoneas.png" class="card-img">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Dicotiledóneas</h5>
             </div>
         </div>
-        </div>
+
 
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
     </main>
 
 
+    <a href="teoria-endosimbiotica.html" class="float">
+        <i class="material-icons ">input</i>
+    </a>
 </body>
 
 </html>
