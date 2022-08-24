@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Origen de la primera célula eucariota fotosintética</title>
+    <title>Con estomas</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
@@ -20,37 +20,10 @@
         });
     </script>
 
+
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        
-        body {
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 18px;
-            background-color: #CCC;
-        }
-        
-        .float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #0C9;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 2px 2px 3px #999;
-        }
-        
-        .my-float {
-            margin-top: 22px;
-        }
-        
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -108,11 +81,10 @@
 
 <body class="text-center">
 
-
     <main class="m-auto">
         <img class="mb-4" src="./assets/brand/sun-plant-wilt-solid.svg" width="72" height="57">
 
-        <h1 class="h3 mb-3 fw-normal">Embrión protejido...... Plantas terrestres</h1>
+        <h1 class="h3 mb-3 fw-normal">Con estomas</h1>
 
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -120,14 +92,13 @@
                 <div class="card">
                     <div class="card-body">
                         <h2><i class="material-icons ">adb</i></h2>
-                        <h5 class="card-title"> Sin estomas... hepáticas </h5>
+                        <h5 class="card-title">No poseen megafilos - Licopodios</h5>
                         <!-- Button trigger modal -->
                         <div class="container mt-3">
-                            <p>Sin arquegonio</p>
                             <button id="btn1" type="button" class="btn btn-secondary btn-lg">
                                 <i class="material-icons ">remove_red_eye</i>
                             </button>
-                            <img id="myPhoto" width="250" height="200" src="./assets/img/hepaticas.jpg">
+                            <img id="myPhoto" src="./assets/img/licopodiuos.jpg">
                         </div>
                         </a>
                     </div>
@@ -137,8 +108,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h2><i class="material-icons ">spa</i></h2>
-                        <h5 class="card-title">Con estomas </h5>
-                        <a href="con-estomas.html">
+                        <h5 class="card-title">Poseen megafilos </h5>
+                        <a href="megafilos.html">
                             <button type="button" class="btn btn-primary">
                             Ver
                         </button>
@@ -149,15 +120,15 @@
         </div>
         </div>
 
-
+        <script type="text/javascript">
+            $('#btn1').on("click", function(e) {
+                $('#myPhoto').toggle('slow');
+            });
+        </script>
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
     </main>
 
-    <script type="text/javascript">
-        $('#btn1').on("click", function(e) {
-            $('#myPhoto').toggle('slow');
-        });
-    </script>
+
 </body>
 
 </html>
