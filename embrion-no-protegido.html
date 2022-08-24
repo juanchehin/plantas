@@ -11,11 +11,77 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script>
+        // $(document).ready(function() {
+        //     $("#myModal").hide();
+        //     $("#hide").attr('disabled', true);
+        // });
+    </script>
 
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+        
+        .modalDialog:target {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .modalDialog>div {
+            width: 900px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+        }
+        
+        .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+        
+        .close:hover {
+            background: #00d9ff;
+        }
+        
         * {
             padding: 0;
             margin: 0;
@@ -103,7 +169,7 @@
 
 
     <main class="m-auto">
-        <a href="index.html">
+        <a href="prefiguracion-arquegonio.html">
             <button type="button" class="btn btn-secondary btn-lg" style="float: right;"><i class="material-icons ">home</i></button>
         </a>
 
@@ -124,9 +190,27 @@
     </main>
 
 
-    <a href="teoria-endosimbiotica.html" class="float">
+    <a href="#openModal" class="float">
         <i class="material-icons ">input</i>
     </a>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h4>Adaptaciones de las plantas a un medio fuera del agua:</h4>
+            <ul class="list-group list-group-flush">
+                <p>- Desarrollo de la cutícula, capa protectora que recubre su superficie e impide la pérdida de agua la volvió impermeable, esa fue su primera estrategia de adaptación hace 400 millones de años. </p>
+                <p>- Desarrollo de la esporopolenina que forma una gruesa pared en la espora protegiéndola. </p>
+                <p>- El contacto con el aire se logra a través de pequeños poros en la epidermis llamados estomas </p>
+                <p>- Desarrollo del tejido vascular</p>
+                <p>- Transformación de rizoides (organos de sujeción) en un sistema radicular (función sujeción y absorción de agua y minerales)</p>
+                <p>- Para sobrellevar la alta concentración de oxígeno atmosférico (mucho más alta que en el agua), ya que demasiado oxígeno inhibe la fijación de dióxido de carbono, el metabolismo incluye un sistema de oxidación del glicolato (fotorrespiración).
+                </p>
+                <p>- Como protección contra la radiación ultravioleta, que es más intensa fuera del agua, se desarrollaron los flavonoide</p>
+
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

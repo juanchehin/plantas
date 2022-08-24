@@ -17,6 +17,9 @@
         $(document).ready(function() {
             $("#myPhoto").hide();
             $("#hide").attr('disabled', true);
+
+            $("#myPhoto2").hide();
+            $("#hide").attr('disabled', true);
         });
     </script>
 
@@ -115,10 +118,10 @@
                         <h2><i class="material-icons ">spa</i></h2>
                         <h5 class="card-title">Angiospermas </h5>
                         <div class="container mt-3">
-                            <button id="btn1" type="button" class="btn btn-secondary btn-lg">
+                            <button id="btn2" type="button" class="btn btn-secondary btn-lg">
                                 <i class="material-icons ">remove_red_eye</i>
                             </button>
-                            <img id="myPhoto" src="./assets/img/angiospermas.jpg">
+                            <img id="myPhoto2" src="./assets/img/angiospermas.jpg">
                         </div>
                         <a href="angiospermas.html">
                             <button type="button" class="btn btn-primary">
@@ -134,6 +137,10 @@
         <script type="text/javascript">
             $('#btn1').on("click", function(e) {
                 $('#myPhoto').toggle('slow');
+            });
+
+            $('#btn2').on("click", function(e) {
+                $('#myPhoto2').toggle('slow');
             });
         </script>
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
