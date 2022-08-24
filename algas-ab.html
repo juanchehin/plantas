@@ -11,7 +11,14 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $("#myPhoto").hide();
+            $("#hide").attr('disabled', true);
+        });
+    </script>
 
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -103,25 +110,43 @@
 
 
     <main class="m-auto">
-        <a href="index.html">
+        <a href="algas-clorofila.html">
             <button type="button" class="btn btn-secondary btn-lg" style="float: right;"><i class="material-icons ">home</i></button>
         </a>
 
         <img class="mb-4" src="./assets/brand/sun-plant-wilt-solid.svg" width="72" height="57">
 
-        <h1 class="h3 mb-3 fw-normal">Alga ancestral con clorofila</h1>
-
-        <div class="tenor-gif-embed" data-postid="5878577" data-share-method="host" data-aspect-ratio="1.5" data-width="120%"></div>
-        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-
+        <h1 class="h3 mb-3 fw-normal">Algas con clorofila a y b y sin ficobiliproteínas</h1>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="container mt-3">
+                    <p>Sin arquegonio</p>
+                    <button id="btn1" type="button" class="btn btn-secondary btn-lg">
+                        <i class="material-icons ">remove_red_eye</i>
+                    </button>
+                    <img id="myPhoto" src="./assets/img/Chlorophyta.jpg">
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="container mt-3">
+                    <p>Prefiguracion del arquegonio</p>
+                    <a href="#">
+                        <button type="button" class="btn btn-primary">
+                        Ver
+                    </button>
+                    </a>
+                </div>
+            </li>
+        </ul>
 
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
     </main>
 
-
-    <a href="algas-clorofila.html" class="float">
-        <i class="material-icons ">input</i>
-    </a>
+    <script type="text/javascript">
+        $('#btn1').on("click", function(e) {
+            $('#myPhoto').toggle('slow');
+        });
+    </script>
 </body>
 
 </html>
