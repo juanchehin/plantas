@@ -5,20 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>Poseen Megafilos</title>
+    <title>Vascular</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("#myPhoto").hide();
-            $("#hide").attr('disabled', true);
-        });
-    </script>
 
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -83,22 +74,23 @@
     <main class="m-auto">
         <img class="mb-4" src="./assets/brand/sun-plant-wilt-solid.svg" width="72" height="57">
 
-        <h1 class="h3 mb-3 fw-normal">Poseen Megafilos</h1>
+        <a href="algas-ab.html">
+            <button type="button" class="btn btn-secondary btn-lg" style="float: right;"><img src="./assets/img/home.png"></button>
+        </a>
 
+        <h1 class="h3 mb-3 fw-normal">Vascular</h1>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col-sm-6">
                 <div class="card">
                     <div class="card-body">
                         <h2><img src="./assets/img/park.png"></h2>
-                        <h5 class="card-title">Helechos (Pteridophytas)</h5>
+                        <h5 class="card-title">Sin tejido vascular....... Musgos/Angiospermas</h5>
                         <!-- Button trigger modal -->
-                        <div class="container mt-3">
-                            <button id="btn1" type="button" class="btn btn-secondary btn-lg">
-                                <img src="./assets/img/visibility.png">
-                            </button>
-                            <img id="myPhoto" width="150" height="150" src="./assets/img/helecho.jpg">
-                        </div>
+                        <a href="embrion-no-protegido.html">
+                            <button type="button" class="btn btn-primary">
+                            Ver
+                        </button>
                         </a>
                     </div>
                 </div>
@@ -107,8 +99,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h2><img src="./assets/img/grass.png"></h2>
-                        <h5 class="card-title">Semillas</h5>
-                        <a href="semillas.html">
+                        <h5 class="card-title">Con tejido vascular</h5>
+                        <a href="megafilos.html">
                             <button type="button" class="btn btn-primary">
                             Ver
                         </button>
@@ -119,11 +111,7 @@
         </div>
         </div>
 
-        <script type="text/javascript">
-            $('#btn1').on("click", function(e) {
-                $('#myPhoto').toggle('slow');
-            });
-        </script>
+
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
     </main>
 
