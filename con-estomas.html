@@ -19,6 +19,11 @@
             $("#myPhoto").hide();
             $("#hide").attr('disabled', true);
         });
+
+        $(document).ready(function() {
+            $("#myPhoto2").hide();
+            $("#hide").attr('disabled', true);
+        });
     </script>
 
 
@@ -117,6 +122,12 @@
                             Ver
                         </button>
                         </a>
+                        <div class="container mt-3">
+                            <button id="btn2" type="button" class="btn btn-secondary btn-lg">
+                                <img src="./assets/img/visibility.png">
+                            </button>
+                            <img id="myPhoto2" width="300" height="300" src="./assets/img/con-vascular.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,6 +137,9 @@
         <script type="text/javascript">
             $('#btn1').on("click", function(e) {
                 $('#myPhoto').toggle('slow');
+            });
+            $('#btn2').on("click", function(e) {
+                $('#myPhoto2').toggle('slow');
             });
         </script>
         <p class="mt-5 mb-3 text-muted">&copy; CIIDEPT–2022</p>
